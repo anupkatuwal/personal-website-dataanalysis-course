@@ -30,7 +30,9 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: 'Inter', "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
   transition: background-color var(--transition), color var(--transition);
 }
 
@@ -283,19 +285,21 @@ body.dark .text-secondary {
 
 /* Hero text animation */
 .hero h1 {
-  animation: fadeUp 0.7s ease both;
+  animation: fadeUp 0.6s ease both;
 }
 
 .hero .lead {
-  animation: fadeUp 0.7s 0.15s ease both;
+  animation: fadeUp 0.6s 0.1s ease both;
+  color: var(--text) !important;
+  opacity: 0.8;
 }
 
 .hero .d-flex {
-  animation: fadeUp 0.7s 0.3s ease both;
+  animation: fadeUp 0.6s 0.2s ease both;
 }
 
 .hero-card {
-  animation: fadeUp 0.8s 0.1s ease both;
+  animation: fadeUp 0.7s ease both;
 }
 
 @keyframes fadeUp {
