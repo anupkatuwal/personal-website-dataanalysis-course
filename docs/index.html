@@ -79,7 +79,7 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
               <div class="hero-card position-relative mx-auto">
-                <img src="images/profile.svg" alt="Profile portrait" class="img-fluid rounded-4 shadow" />
+                <img src="images/profile.jpg" alt="Anup Katuwal profile photo" class="img-fluid rounded-4 shadow" />
                 <div class="hero-badge">
                   <i class="bi bi-code-slash"></i>
                 </div>
@@ -100,7 +100,7 @@
             </p>
           </div>
           <div class="row g-4">
-            <div class="col-lg-7">
+            <div class="col-lg-7 reveal">
               <div class="card border-0 shadow-sm h-100 p-4">
                 <h3 class="h4 fw-semibold mb-3">Biography</h3>
                 <p class="text-muted">
@@ -111,7 +111,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 reveal">
               <div class="card border-0 shadow-sm h-100 p-4">
                 <h3 class="h4 fw-semibold mb-3">Quick Facts</h3>
                 <ul class="list-unstyled text-muted mb-0">
@@ -133,7 +133,7 @@
             <h2 class="display-6 fw-bold">A toolkit for data, automation, and AI</h2>
           </div>
           <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <div class="card border-0 shadow-sm h-100 p-4 skill-card">
                 <h3 class="h5 fw-semibold mb-3">Data & ML</h3>
                 <div class="d-flex flex-wrap gap-2">
@@ -146,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <div class="card border-0 shadow-sm h-100 p-4 skill-card">
                 <h3 class="h5 fw-semibold mb-3">Engineering</h3>
                 <div class="d-flex flex-wrap gap-2">
@@ -158,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <div class="card border-0 shadow-sm h-100 p-4 skill-card">
                 <h3 class="h5 fw-semibold mb-3">Tools & Data Platforms</h3>
                 <div class="d-flex flex-wrap gap-2">
@@ -183,7 +183,7 @@
             <h2 class="display-6 fw-bold">Selected work</h2>
           </div>
           <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <div class="card border-0 shadow-sm h-100 project-card">
                 <img src="images/project-analytics.svg" class="card-img-top" alt="Bias-aware sentiment analysis project preview" />
                 <div class="card-body">
@@ -201,7 +201,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <div class="card border-0 shadow-sm h-100 project-card">
                 <img src="images/project-ecommerce.svg" class="card-img-top" alt="Upwork proposal automation project preview" />
                 <div class="card-body">
@@ -219,7 +219,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <div class="card border-0 shadow-sm h-100 project-card">
                 <img src="images/project-taskmanager.svg" class="card-img-top" alt="Portfolio project preview" />
                 <div class="card-body">
@@ -249,7 +249,7 @@
             <h2 class="display-6 fw-bold">Experience and education</h2>
           </div>
           <div class="row g-4">
-            <div class="col-lg-6">
+            <div class="col-lg-6 reveal">
               <div class="card border-0 shadow-sm h-100 p-4">
                 <h3 class="h4 fw-semibold mb-4">Experience</h3>
                 <div class="timeline">
@@ -271,7 +271,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 reveal">
               <div class="card border-0 shadow-sm h-100 p-4">
                 <h3 class="h4 fw-semibold mb-4">Education</h3>
                 <div class="timeline">
@@ -305,7 +305,7 @@
             <h2 class="display-6 fw-bold">Let’s build something great</h2>
           </div>
           <div class="row g-4">
-            <div class="col-lg-5">
+            <div class="col-lg-5 reveal">
               <div class="card border-0 shadow-sm h-100 p-4">
                 <h3 class="h4 fw-semibold mb-3">Get in touch</h3>
                 <ul class="list-unstyled text-muted">
@@ -317,24 +317,33 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7 reveal">
               <div class="card border-0 shadow-sm h-100 p-4">
-                <form>
+                <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                  <i class="bi bi-check-circle-fill me-2"></i>Thanks! I'll get back to you shortly.
+                </div>
+                <form id="contactForm" novalidate>
                   <div class="row g-3">
                     <div class="col-md-6">
-                      <label for="name" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Your name" />
+                      <label for="contactName" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="contactName" placeholder="Your name" required />
+                      <div class="invalid-feedback">Please enter your name.</div>
                     </div>
                     <div class="col-md-6">
-                      <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Your email" />
+                      <label for="contactEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="contactEmail" placeholder="Your email" required />
+                      <div class="invalid-feedback">Please enter a valid email.</div>
                     </div>
                     <div class="col-12">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your project"></textarea>
+                      <label for="contactMessage" class="form-label">Message</label>
+                      <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell me about your project" required></textarea>
+                      <div class="invalid-feedback">Please enter a message.</div>
                     </div>
                     <div class="col-12">
-                      <button type="submit" class="btn btn-primary">Send Message</button>
+                      <button type="submit" class="btn btn-primary" id="formSubmit">
+                        <span class="submit-text">Send Message</span>
+                        <span class="spinner-border spinner-border-sm d-none ms-2" role="status" aria-hidden="true"></span>
+                      </button>
                     </div>
                   </div>
                 </form>
