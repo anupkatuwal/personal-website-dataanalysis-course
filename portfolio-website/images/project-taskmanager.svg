@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Task manager illustration">
+  <rect width="800" height="500" rx="24" fill="#eff6ff"/>
+  <rect x="120" y="90" width="560" height="320" rx="20" fill="#ffffff"/>
+  <rect x="150" y="140" width="270" height="36" rx="18" fill="#2563eb"/>
+  <rect x="150" y="210" width="220" height="18" rx="9" fill="#cbd5e1"/>
+  <rect x="150" y="248" width="250" height="18" rx="9" fill="#cbd5e1"/>
+  <rect x="150" y="286" width="180" height="18" rx="9" fill="#cbd5e1"/>
+  <circle cx="560" cy="245" r="90" fill="#60a5fa"/>
+  <path d="M520 245l28 28 52-60" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

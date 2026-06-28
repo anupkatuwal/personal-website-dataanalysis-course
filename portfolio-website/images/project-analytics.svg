@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Analytics dashboard illustration">
+  <rect width="800" height="500" rx="24" fill="#0f172a"/>
+  <rect x="90" y="90" width="620" height="320" rx="18" fill="#111827"/>
+  <rect x="130" y="150" width="120" height="180" rx="10" fill="#2563eb"/>
+  <rect x="280" y="120" width="120" height="210" rx="10" fill="#3b82f6"/>
+  <rect x="430" y="190" width="120" height="140" rx="10" fill="#60a5fa"/>
+  <rect x="580" y="150" width="80" height="180" rx="10" fill="#93c5fd"/>
+</svg>
